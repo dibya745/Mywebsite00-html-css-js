@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <img src="flowerlogo.jpg" alt="Logo" class="logo 1">
+            </div>
+            <div> FLOWER SHOP</div>
+            <div class="contact"><a href="contact.html">CONTACT</a></div>
+        </header>
+        <main>
+            <p class="intro-text">An online flower shop offers a convenient way to buy fresh floral arrangements for any occasion.
+                 Customers can choose from a variety of bouquets, baskets, and custom arrangements, often with add-ons like personalized messages and vases.
+                  Many shops provide same-day or next-day delivery, ensuring timely arrival. With easy browsing, secure payment, and reliable delivery,
+                   online flower shops make sending beautiful flowers simple and hassle-free.</p>
+            <form action = "javascript:submitForm()" onSubmit = "return validate()">
+                <table>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" name="name" required> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="genre">Favourite Genre</label> </td>
+                        <td>
+                            <input list="genres" id="genre" name="genre" required>
+                            <datalist id="genres">
+                                <option value="Rock">
+                                <option value="Pop">
+                                <option value="Jazz">
+                                <option value="Classical">
+                                <option value="Hip Hop">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="subscribe">Subscribe</label> </td>
+                        <td>
+                            <input type="checkbox" id="subscribe" name="subscribe" required>
+                            <label for="subscribe">Subscribe to our newsletter via email</label>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>,      
+        All rights reserved
+        </footer>
+    </div>
+<script>
+function submitForm(){
+    window.alert("Form submitted")
+}
+</script>
+                    
+</body>
+</html>
