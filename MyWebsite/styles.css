@@ -5,41 +5,53 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("flowerbackground.jpg");
     background-repeat: no-repeat;
     opacity: 0.8;
     background-size: cover;
 }
 header {
-    width: 98%;
     display: flex;
+    width: 98%;
     justify-content: space-between;
-    align-items: center;
     padding: 10px 20px;
     background-color: #f4f4f4;
     border-bottom: 1px solid #ccc;
     border: 1px solid #000;
     
+    
 }
 header div{
     color: #032b0e;
     font-size: 50px;
+    height: 100px;
 }
-header ul{
-    list-style: none;
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+}
+.headtext {
+    padding-top: 50px;
+    font-size: medium ;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    /* margin-top: 3px; */
 }
 header img{
     vertical-align: middle;
 }
 .logo{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+
 
 }
 
 .content {
     width: 90%;
+    height: auto;
     max-width: 1200px;
     padding: 20px;
     border: 1px solid #000;
@@ -50,6 +62,7 @@ header img{
     padding: 50px 20px;
     opacity: 0.8;
     border: 1px solid #000; 
+    background-image: url(welcomimg.jpg);
 }
 
 .text-image {
@@ -66,7 +79,7 @@ header img{
     border: 1px solid #000;
 }
 footer {
-    width: 100%;
+    width: 91.5%;
     text-align: center;
     padding: 10px;
     background-color: #f4f4f4;
@@ -76,7 +89,7 @@ footer {
 }
 
 .container {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     border: 1px solid #000;
     padding: 20px;
@@ -86,7 +99,7 @@ header1 {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #000;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 header .logo1 {
@@ -111,11 +124,11 @@ header .site-name {
     
 }
 
-header .contact {
-    font-size: 18px;
+header .contact1 {
     background-color: #ccc;
     padding: 5px 10px;
     border: 1px solid #000;
+    font-size: medium;
 }
 
 .intro-text {
@@ -163,4 +176,9 @@ footer1 {
     margin-top: 20px;
     border: 1px solid #000;
     padding: 5px;
+}
+@media (max-width: 768px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
 }
